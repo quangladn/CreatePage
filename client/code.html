@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code CreatePage</title>
+    <link rel="stylesheet" href="/style">
+</head>
+<body>
+    <form action="/page" method="post">
+        <input type="text" name="title" placeholder="title for web"> <br>
+        <textarea oninput="runTest()" name="htmlContent" id="html" cols="50" rows="10" placeholder="html"></textarea>
+        <textarea oninput="runTest()" name="cssContent" id="css" cols="40" rows="10" placeholder="css"></textarea>
+        <textarea oninput="runTest()" name="jsContent" id="js" cols="44" rows="10" placeholder="js"></textarea><br>
+        <input type="submit">
+    </form>
+    <iframe class="output">
+    </iframe>
+    <script src="/js">
+    </script>
+</body>
+</html>
